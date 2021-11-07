@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Malin Liedholm</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/base-style.css">
+        <link rel="stylesheet" href="/css/project-style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/js/show-image.js"></script>
+    </head>
+    <body>
+        
+        <div class="go-back">
+        <a href="/index.html#rayTracer"><i class="fa fa-arrow-left" style="font-size: 20px;"> Back to main page</i></a>
+        </div>
+        
+        <header>
+        <h1 class="title-of-project">Ray tracer</h1>
+        </header>
+        
+        <main>
+            <p class="project-side-info">
+            As a part of a project in the course DH2323 Computer Graphics and Interaction at KTH I implemented a basic ray tracer in C++ and SDL.
+            <br><br>
+            The ray tracer was an extension on one of the lab assignments I made in the same course. The implemented ray tracer can render diffuse and specular materials on triangulated meshes and spheres. The ray tracer also renders hard shadows. Refraction was also implemented as a part of the ray tracer to be able to render transparent materials.
+            <br><br>
+            If you want to learn even more about the project you can read the project report that is available here:
+            <a class="project-website" href="https://drive.google.com/file/d/1RFN6vpQW-i_19x_e3RSO8yt6yXiomOOx/view?usp=sharing">Project report</a>
+            </p>
+            <div class="project-images">
+            <div class="row">
+            <img class="gallery-image galleryImageSlides" src="/images/raytracerCardImg.bmp" onclick="onClickImage(this)">
+            <img class="gallery-image galleryImageSlides" src="/images/Glass1.bmp" onclick="onClickImage(this)">
+            <img class="gallery-image galleryImageSlides" src="/images/Sphere2.bmp" onclick="onClickImage(this)">
+            </div>
+            </div>
+                        
+            <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-top">
+            <img id="imgToShow" style="width: 100%;">
+            </div>
+            </div>
+            
+        </main>
+        <footer>...</footer>
+
+    </body>
+</html>

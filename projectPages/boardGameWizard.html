@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Malin Liedholm</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/base-style.css">
+        <link rel="stylesheet" href="/css/project-style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/js/show-image.js"></script>
+    </head>
+    <body>
+        
+        <div class="go-back">
+        <a href="/index.html#boardGameWizard"><i class="fa fa-arrow-left" style="font-size: 20px;"> Back to main page</i></a>
+        </div>
+        
+        <header>
+        <h1 class="title-of-project">Board Game Wizard</h1>
+        </header>
+        
+        <main>
+            <p class="project-side-info">
+            Board Game Wizard is an interactive visualization of board games, where you can find board games by filter on things like game type, playtime, game mechanics and much more. The project was a group project developed in the course DH2321 Information Visualization at KTH.
+            <br><br>
+            During the project it was my first-time programming in JavaScript as well as my first time using the D3.js JavaScript library, so I learned a lot about both during the project. My main contribution in the project was to implement the interactive legend for game type, structure the information about each board game in the information container that shows up when pressing a board game in the scatterplot. I also worked on filtering of number of players, playtime, recommended player age and number of ratings
+            <br><br>
+            If you want to check out and explore the project for yourself, you can do it here: 
+            <a class="project-website" href="https://maximillianmus.github.io/Board-game-wizard/">Board Game Wizard</a>
+            </p>
+            <div class="project-images">
+            <div class="row">
+                
+                <img class="gallery-image galleryImageSlides" src="/images/boardGameWizardCardImg.png" onclick="onClickImage(this)">
+                </div>
+            </div>
+                        
+            <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-top">
+            <img id="imgToShow" style="width: 100%;">
+            </div>
+            </div>
+            
+        </main>
+        <footer>...</footer>
+
+    </body>
+</html>

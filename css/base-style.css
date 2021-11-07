@@ -21,3 +21,8 @@ main {
     display: flex;
     flex-grow: column;
 }
+
+footer {
+    height: 50px;
+    background-color: var(--main-background-color);
+}

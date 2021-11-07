@@ -213,16 +213,3 @@
     }
 
 }
-
-.fa {
-    color: var(--main-text-color);
-    transition: 0.2s;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-
-.fa:hover {
-    color: orange;
-    transition: 0.2s;
-}

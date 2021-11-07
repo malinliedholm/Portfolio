@@ -25,4 +25,19 @@ main {
 footer {
     height: 50px;
     background-color: var(--main-background-color);
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.fa {
+    color: var(--main-text-color);
+    transition: 0.2s;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.fa:hover {
+    color: orange;
+    transition: 0.2s;
 }

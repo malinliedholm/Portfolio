@@ -1,118 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Malin Liedholm</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/base-style.css">
-        <link rel="stylesheet" href="./css/index-style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <title>Malin Liedholm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="websiteContent/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-        <header> 
-        <div class="row">
-            <div class="column">
-                <img src="images/MalinImg.jpg" class="profile-img w3-circle">
-            </div>
-            <div class="column">
-                <div class="header-about">
-                <div class="introduction-info-title">Malin Liedholm</div>
-                <div class="introduction-info-text">I am a Master of Science student in Media Technology and Engineering at KTH Royal Institute of Technology, with an interest in information visualization, computer graphics and extended reality (XR). I am currently reading the last year of my master’s programme which is within computer science with a specialization track within visualization and interactive graphics. On this site you can read more about some different projects that I have worked on.</div>
-                </div>
-                <div class="contact-links">
-                <a href="mailto:malin.liedholm@gmail.com"><i class="fa fa-envelope" style="font-size: 30px;"></i></a>
-                <a href="https://github.com/malinliedholm"><i class="fa fa-github" style="font-size: 30px;"></i></a>
-                <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173"><i class="fa fa-linkedin" style="font-size: 30px;"></i></a>
-                </div>
-            </div>
-        </div>
-        </header>
-        
-        <main>
-            <h1 class="projects-title">Projects</h1>
-            
-            <div class="projects-container">
-                <div class="row">
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="oVRseer">oVRseer</h2>
-                            <img class="project-img" src="images/oVRseerCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-unity">Unity</div>
-                                <div class="label label-cSharp">C#</div>
-                                </div>
-                                <p class="project-short-description">oVRseer is an asymmetrical multiplayer prop hunt VR game developed in Unity as a part of a group project in the course DH2413 Advanced Graphics and Interaction at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='oVRseer.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="sabelTiny">Sabel and Tiny</h2>
-                            <img class="project-img" src="images/sabelAndTinyCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-unity">Unity</div>
-                                <div class="label label-cSharp">C#</div>
-                                </div>
-                                <p class="project-short-description">Sabel and Tiny is a 2D platform puzzle game developed in Unity as a part of a group project in the course DH2650  Computer Game Design at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='sabelAndTiny.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="rayTracer">Ray tracer</h2>
-                            <img class="project-img" src="images/raytracerCardImg.bmp">
-                            <div class="label-container">
-                                <div class="label label-cpp">C++</div>
-                                </div>
-                                <p class="project-short-description">
-                                As a part of a project in the course DH2323  Computer Graphics and Interaction at KTH I implemented a basic raytracer in C++ and SDL.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='raytracer.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="boardGameWizard">Board Game Wizard</h2>
-                            <img class="project-img" src="images/boardGameWizardCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-javascript">Javascript</div>
-                                <div class="label label-javascript">D3.js</div>
-                                <div class="label label-html">HTML</div>
-                                <div class="label label-css">CSS</div>
-                                </div>
-                                <p class="project-short-description">
-                                Board Game Wizard is an interactive visualization of board games, where you can find board games by filter on things like game type, playtime, game mechanics and much more. The project was a group project developed in the course DH2321  Information Visualization at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='boardGameWizard.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-        </main>
-        <footer>
-        Contact: 
-            <a href="mailto:malin.liedholm@gmail.com"><i class="fa fa-envelope" style="font-size: 12px;"></i></a>
-            <a href="https://github.com/malinliedholm"><i class="fa fa-github" style="font-size: 12px;"></i></a>
-            <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173"><i class="fa fa-linkedin" style="font-size: 12px;"></i></a>
-        </footer>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Malin Liedholm</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    </body>
+<header></header>
+
+<div class="container">
+  <h1>Projects</h1>
+</div>
+
+<div class="project-card">
+  <figure class="card-thumbnail">
+    <img src="websiteContent/images/oVRseerImg1.png" class="card-image" alt="oVRseer">
+    
+    <div class="card-text">
+      <h1 class="card-caption">oVRseer</h1>
+      <div class="card-description">
+        <p>An assymetrical VR prop hunt multiplayer game</p>
+        <button type="button" class="btn learn-more-btn">Learn More</button>
+      </div>
+    </div>
+    
+  </figure>
+</div>
+
+<div class="container">
+  <h2>School related projects</h2>
+</div>
+
+<div class="project-card">
+  <figure class="card-thumbnail">
+    <img src="websiteContent/images/sabelAndTinyCardImg.png" class="card-image" alt="SabelAndTiny">
+    
+    <div class="card-text">
+      <h1 class="card-caption">Sabel and Tiny</h1>
+      <div class="card-description">
+        <p>some text</p>
+        <button type="button" class="btn learn-more-btn">Learn More</button>
+      </div>
+    </div>
+    
+  </figure>
+</div>
+
+</body>
 </html>

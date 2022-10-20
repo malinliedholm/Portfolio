@@ -1,0 +1,95 @@
+:root {
+  --main-background-color: #0c0f0a;
+  --main-header-color: #655a7c;
+  --main-text-color: #eaeaea;
+  --secondary-text-color: #ab92bf;
+}
+
+
+body {
+    background-color: var(--main-background-color);
+    font-family: sans-serif;
+    width: 100%;
+}
+
+header {
+  height: 50px;
+  background-color: var(--main-header-color);
+}
+
+.navbar {
+  background-color: var(--main-background-color);
+}
+
+.navbar-header .navbar-brand {
+  color: var(--secondary-text-color);
+}
+
+.card-image {
+  max-width: 400px;
+}
+
+.project-card {
+	width: 420px;
+  padding: 10px;
+	background-color: rgba(255, 255, 255, 0.041);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.card-text {
+  width: 420px;
+  background-color: rgba(255, 255, 255, 0.075);
+  position: absolute;
+  top: 265px;
+  left: 0%;
+  transform: translate(0%, -50%);
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
+
+.card-description {
+  /*display: none;*/
+  
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card:hover img {
+  opacity: 0.9;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.project-card:hover .card-text {
+  transform: translateY(-150px);
+  cursor: pointer;
+
+}
+
+.project-card:hover .card-description {
+  display: block;
+  transition: 0.5s;
+}
+
+.card-description .learn-more-btn {
+  background-color: white;
+  color: #655a7c;
+}
+
+
+@keyframes slide-up-fade-in {
+    0% {
+        transform:  translate(0px,0px)  ;
+    }
+    100% {
+        transform:  translate(0px,-100px)  ;
+    }
+}

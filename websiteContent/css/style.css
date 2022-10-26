@@ -1,20 +1,51 @@
 :root {
   --main-background-color: #0c0f0a;
-  --main-header-color: #655a7c;
-  --main-text-color: #eaeaea;
-  --secondary-text-color: #ab92bf;
+  --secondary-background-color: #ffffff;
+  --main-header-color: #b9b9b9;
+  --main-text-color: #ffffff;
+  --secondary-text-color: #ffffff;
 }
 
 
 body {
-    background-color: var(--main-background-color);
+    background-color: var(--secondary-background-color);
     font-family: sans-serif;
     width: 100%;
 }
 
-header {
-  height: 50px;
-  background-color: var(--main-header-color);
+.header-container {
+  height: 600px;
+  padding-top: 100px;
+  /*background-image: linear-gradient(to right, rgb(167, 35, 201, 0.75) , rgb(255, 230, 0, 0.75));*/
+  /*background-image: linear-gradient(to right, #eee6e3 , rgb(167, 35, 201, 0.75) );*/
+  background-color: #eee6e3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 30px;
+  row-gap: 30px;
+  color: rgba(23, 5, 27, 0.75);
+}
+
+.header-text{
+  max-width: 600px;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.281);
+}
+
+.profile-img {
+  max-width: 450px;
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+
+  border-top-left-radius: 400px;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 250px;
 }
 
 .navbar {
@@ -26,51 +57,56 @@ header {
 }
 
 .card-image {
-  max-width: 400px;
+  max-width: 430px;
+  margin: auto;
+  display: block;
+  transform: translate(-15px, -10px);
 }
 
 .project-card {
-	width: 420px;
-  padding: 10px;
-	background-color: rgba(255, 255, 255, 0.041);
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+	width: 400px;
+  height: 240px;
+  /*padding: 10px;*/
+	/*background-color: var(--secondary-text-color);*/
+
+  background-color: white;
+	box-shadow: 0 5px 10px 5px rgb(167, 35, 201, 0.25);
   transition: transform 0.5s;
 
   position: relative;
   text-align: center;
   color: white;
+
+  /*border-radius: 25px;*/
+
   overflow: hidden;
 }
 
 .card-text {
-  width: 420px;
-  background-color: rgba(255, 255, 255, 0.075);
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
-  top: 265px;
-  left: 0%;
-  transform: translate(0%, -50%);
+  top: 170px;
+  left: 0px;
+  /*transform: translate(0%, -50%);*/
   transition: 0.5s;
   padding-bottom: 20px;
 }
 
-.card-description {
-  /*display: none;*/
-  
-}
-
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
-.project-card:hover img {
+.card-thumbnail:hover .card-image-container{
   opacity: 0.9;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(3px);
+
 }
 
 .project-card:hover .card-text {
-  transform: translateY(-150px);
-  cursor: pointer;
+  transform: translateY(-85px);
+  cursor: context-menu;
+
 
 }
 
@@ -80,9 +116,16 @@ header {
 }
 
 .card-description .learn-more-btn {
-  background-color: white;
-  color: #655a7c;
+  background-color: var(--secondary-text-color);
+  color: rgb(52, 47, 63);
 }
+
+.card-description .learn-more-btn:hover {
+  background-color: var(--secondary-text-color);
+  color: rgb(222, 217, 233);
+  cursor: pointer;
+}
+
 
 
 @keyframes slide-up-fade-in {
@@ -92,4 +135,80 @@ header {
     100% {
         transform:  translate(0px,-100px)  ;
     }
+}
+
+
+.title-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--main-background-color);
+}
+
+.grid-container {
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+@media (max-width: 1300px) {
+  .grid-container {
+    flex-direction: column;
+  }
+}
+
+
+.container-project-info {
+  height: 760px;
+  /*padding: 10px;*/
+  background-color: #eee6e3;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  color:black;
+
+  overflow: hidden;
+
+}
+
+.project-text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.project-images {
+  max-width: 400px;
+}
+
+.close-btn{
+  position: absolute;
+  left: 99%;
+  margin: 1%;
+}
+
+#oVRseer-projet {
+  /*display: none;*/
+  max-height: 760px;
+  transition: all 0.25s linear;
+}
+
+#oVRseer-projet.is-hidden {
+  max-height: 0;
+}
+
+#sabelandtiny-projet {
+  max-height: 760px;
+  transition: all 0.25s linear;
+}
+
+#sabelandtiny-projet.is-hidden {
+  max-height: 0;
 }

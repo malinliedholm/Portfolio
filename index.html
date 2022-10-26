@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="websiteContent/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="websiteContent/js/script.js"></script>
 </head>
 <body>
 
@@ -23,45 +24,115 @@
   </div>
 </nav>
 
-<header></header>
-
-<div class="container">
-  <h1>Projects</h1>
-</div>
-
-<div class="project-card">
-  <figure class="card-thumbnail">
-    <img src="websiteContent/images/oVRseerImg1.png" class="card-image" alt="oVRseer">
-    
-    <div class="card-text">
-      <h1 class="card-caption">oVRseer</h1>
-      <div class="card-description">
-        <p>An assymetrical VR prop hunt multiplayer game</p>
-        <button type="button" class="btn learn-more-btn">Learn More</button>
-      </div>
+<header>
+  <div class="header-container">
+    <div class="header-text">
+      <h1>Hello! My name is Malin Liedholm</h1>
+      <h4>I am a student currently studing master in engineering in media technology at KTH. I have an interest in computer graphics and game development</h2>
+      <p>email linkedin github</p>
     </div>
     
-  </figure>
+    <img src="websiteContent/images/MalinImg.jpg" class="profile-img">
+  </div>
+</header>
+
+<div class="title-container" id="projectsTitle">
+  <h2>Projects</h2>
 </div>
 
-<div class="container">
-  <h2>School related projects</h2>
-</div>
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="project-card">
+      <figure class="card-thumbnail">
 
-<div class="project-card">
-  <figure class="card-thumbnail">
-    <img src="websiteContent/images/sabelAndTinyCardImg.png" class="card-image" alt="SabelAndTiny">
-    
-    <div class="card-text">
-      <h1 class="card-caption">Sabel and Tiny</h1>
-      <div class="card-description">
-        <p>some text</p>
-        <button type="button" class="btn learn-more-btn">Learn More</button>
-      </div>
+        <div class="card-image-container">
+        <img src="websiteContent/images/oVRseerImg1.png" class="card-image" alt="oVRseer">
+        </div>
+        
+        <div class="card-text">
+          <h1 class="card-caption">oVRseer</h1>
+          <div class="card-description">
+            <p>An assymetrical VR prop hunt multiplayer game</p>
+            <button onClick="clickProjectCard('oVRseer-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+          </div>
+        </div>
+        
+      </figure>
     </div>
-    
-  </figure>
+  </div>
+  <div class="grid-item">
+    <div class="project-card">
+      <figure class="card-thumbnail">
+        <div class="card-image-container">
+          <img src="websiteContent/images/sabelAndTinyCardImg.png" class="card-image" alt="oVRseer">
+          </div>
+        <div class="card-text">
+          <h1 class="card-caption">Sabel & Tiny</h1>
+          <div class="card-description">
+            <p>infor</p>
+            <button onClick="clickProjectCard('sabelandtiny-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+          </div>
+        </div>
+        
+      </figure>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="project-card">
+      <figure class="card-thumbnail">
+        <div class="card-image-container">
+          <img src="websiteContent/images/raytracerCardImg.bmp" class="card-image" alt="oVRseer">
+          </div>
+        <div class="card-text">
+          <h1 class="card-caption">Raytracer</h1>
+          <div class="card-description">
+            <p>info</p>
+            <button type="button" class="btn learn-more-btn">Learn More</button>
+          </div>
+        </div>
+        
+      </figure>
+    </div>
+  </div>
 </div>
 
+<div class="container-project-info is-hidden"  id="oVRseer-projet">
+  <button onClick="closeProjectInfo('oVRseer-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>oVRseer</h1>
+  <p>oVRseer is an asymmetrical multiplayer prop hunt VR game developed in Unity as a part of a group project in the course 
+    DH2413 Advanced Graphics and Interaction at KTH. In the game one player plays in VR and takes the role of the Overseer, 
+    with the goal of finding and eliminating the other players. The other players play can play on either desktop or an android phone. 
+    These players play as Tiny golems and their goal is to collect keys that are hidden across the map. When enough keys are collected, 
+    doors open that the Tiny golem players can escape through. While trying to find the keys the Tiny golem players should avoid getting 
+    noticed by the Overseer. They can do this by for example morph into different props that are scattered across the map or by trying to 
+    impersonate the NPCs that are walking around the map. The game ends when for each of the Tiny golems, they have either managed to 
+    escape or been eliminated by the Overseer.</p>
+
+  <p>During the project I worked with implementing the key collecting system for the Tiny golem players, where C# was the main programming language. 
+    I also worked on implementing a simple shader to create a light beam effect that shows up in front of the doors when they are opened so that the 
+    Tiny golem players can easier find there way to the door. This was my first time writing a shader in Unity, so I learned the basics of writing 
+    shaders in HLSL and Shaderlab. Futhermore I worked with creating some of the 3D models for the game in Blender as well as constructing parts of the final map.</p>
+
+  <p>If you want to learn even more about the project you can check out the project website</p>
+  
+  </div>
+  <div class="project-images">
+  <img src="websiteContent/images/oVRseerImg1.png">
+  </div>
+</div>
+
+<div class="container-project-info is-hidden"  id="sabelandtiny-projet">
+  <div class="project-text">
+  <h1>Sabel and tiny</h1>
+  <p>some text</p>
+</div>
+<div class="project-images">
+  <img src="websiteContent/images/sabelAndTinyCardImg.png">
+  </div>
+</div>
+
+
+<footer>footer</footer>
 </body>
 </html>

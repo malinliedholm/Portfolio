@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Malin Liedholm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="websiteContent/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="websiteContent/js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="header-text">
+      <h1>Hello! My name is Malin Liedholm</h1>
+      <h2></h2>
+      <h4>I am a student currently studing master in engineering in media technology at KTH Royal Institute of technology. I have an interest in computer graphics and game development</h2>
+        <div class="contact-links">
+          <a href="mailto:malin.liedholm@gmail.com"><i class="fa fa-envelope" style="font-size: 30px;"></i></a>
+          <a href="https://github.com/malinliedholm"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+          <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173"><i class="fa fa-linkedin" style="font-size: 30px;"></i></a>
+        </div>
+    </div>
+    
+    <div class="header-img">
+      <div class="profile-img-bg-1"></div>
+      <div class="profile-img-bg-2"></div>
+      <img src="websiteContent/images/MalinImg.jpg" class="profile-img">
+    </div>
+  </div>
+</header>
+<div class="divider">
+  <img src="websiteContent/images/headermaindivider2.svg" class="header-main-divider-img">
+</div>
+
+<div class="title-container" id="projectsTitle">
+  <h2>Projects</h2>
+</div>
+
+<div class="grid-container">
+
+    <div class="grid-row">
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+
+          <div class="card-image-container">
+          <img src="websiteContent/images/oVRseerImg1.png" class="card-image" alt="oVRseer">
+          </div>
+          
+          <div class="card-text">
+            <h1 class="card-caption">oVRseer</h1>
+            <div class="card-description">
+              <p>An assymetrical VR prop hunt multiplayer game</p>
+              <button onClick="clickProjectCard('oVRseer-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/sTImg2.png" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Sabel & Tiny</h1>
+            <div class="card-description">
+              <p>A 2D platform puzzle game</p>
+              <button onClick="clickProjectCard('sabelandtiny-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/ray_tracerCardImg.bmp" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Ray tracer</h1>
+            <div class="card-description">
+              <p>A basic ray tracer developed using C++ and SDL</p>
+              <button onClick="clickProjectCard('raytracer-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+          <img src="websiteContent/images/HaresBearsCard.png" class="card-image" alt="oVRseer">
+          </div>
+          <div class="card-text">
+            <h1 class="card-caption">Hares & Bears</h1>
+            <div class="card-description">
+              <p>An ecosystem simulation in AR</p>
+              <button onClick="clickProjectCard('hares-and-bears-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/boardGameWizardCardImg.png" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Board Game Wizard</h1>
+            <div class="card-description">
+              <p>A visualization tool for finding boardgames</p>
+              <button onClick="clickProjectCard('board-game-wizard-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="divider">
+  <img src="websiteContent/images/projectinfodivider.svg" class="header-main-divider-img">
+</div>
+
+<div class="container-project-info is-hidden"  id="oVRseer-projet">
+  <button onClick="closeProjectInfo('oVRseer-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>oVRseer</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+    <p class="tech-tag">Blender</p>
+  </div>
+  <p>oVRseer is an asymmetrical multiplayer prop hunt VR game developed in Unity as a part of a group project in the course 
+    DH2413 Advanced Graphics and Interaction at KTH. In the game one player plays in VR and takes the role of the Overseer, 
+    with the goal of finding and eliminating the other players. The other players play can play on either desktop or an android phone. 
+    These players play as Tiny golems and their goal is to collect keys that are hidden across the map. When enough keys are collected, 
+    doors open that the Tiny golem players can escape through. While trying to find the keys the Tiny golem players should avoid getting 
+    noticed by the Overseer. They can do this by for example morph into different props that are scattered across the map or by trying to 
+    impersonate the NPCs that are walking around the map. The game ends when for each of the Tiny golems, they have either managed to 
+    escape or been eliminated by the Overseer.</p>
+
+  <p>During the project I worked with implementing the key collecting system for the Tiny golem players, where C# was the main programming language. 
+    I also worked on implementing a simple shader to create a light beam effect that shows up in front of the doors when they are opened so that the 
+    Tiny golem players can easier find there way to the door. This was my first time writing a shader in Unity, so I learned the basics of writing 
+    shaders in HLSL and Shaderlab. Futhermore I worked with creating some of the 3D models for the game in Blender as well as constructing parts of the final map.</p>
+
+  <p>If you want to learn even more about the project you can check out the <a href="https://maximillianmus.github.io/oVRseer/" target="_blank">project website</a></p>
+  
+  </div>
+  <div class="project-images">
+    <div class="row">
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerCardImg.png" onclick="onClickImage(this)">
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerImg1.png" onclick="onClickImage(this)"> 
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerImg2.png" onclick="onClickImage(this)">
+    </div>
+    </div>
+
+    <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-top">
+      <img id="imgToShow" style="width: 100%;">
+      </div>
+    </div>
+</div>
+
+<div class="container-project-info is-hidden"  id="sabelandtiny-projet">
+  <button onClick="closeProjectInfo('sabelandtiny-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Sabel & Tiny</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+  </div>
+  <p>Sabel and Tiny is a 2D platform puzzle game developed in Unity as a part of a group project in the course DH2650 Computer Game Design at KTH.</p>
+  <p>During this project it was my first time working in Unity, so I learned the basics of working with the engine. My main contribution to the project was 
+    implementing the movement and switching of the characters. I also implemented the puzzle locks which are locks that prevent the characters from reaching 
+    different parts of the map. To unlock a lock and progress further in the game the player needs to find the corresponding puzzle piece that is located 
+    somewhere on the map. I also had the main responsibility of documenting the work with the game, such as information about gameplay and game mechanics, 
+    characters, and game world in a game design document.</p>
+  <p>If you want to learn even more about the project you can check out the <a href="https://sabeltiny.github.io/" target="_blank">project website</a></p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg1.png" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg2.png" onclick="onClickImage(this)"> 
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg3.png" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="raytracer-projet">
+  <button onClick="closeProjectInfo('raytracer-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Ray tracer</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C++</p>
+    <p class="tech-tag">SDL</p>
+  </div>
+  <p>As a part of a project in the course DH2323 Computer Graphics and Interaction at KTH I implemented a basic ray tracer in C++ and SDL.</p>
+  <p>The ray tracer was an extension on one of the lab assignments I made in the same course. The implemented ray tracer can render diffuse and 
+    specular materials on triangulated meshes and spheres. The ray tracer also renders hard shadows. Refraction was also implemented as a part of 
+    the ray tracer to be able to render transparent materials.</p>
+  <p>If you want to learn even more about the project you can read the project report that is available here: <a href="https://drive.google.com/file/d/1RFN6vpQW-i_19x_e3RSO8yt6yXiomOOx/view?usp=sharing" target="_blank">Project report</a></p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Sphere2.bmp" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/raytracerCardImg.bmp" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Glass1.bmp" onclick="onClickImage(this)"> 
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="hares-and-bears-projet">
+  <button onClick="closeProjectInfo('hares-and-bears-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Hares & Bears</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+    <p class="tech-tag">Blender</p>
+  </div>
+  <p>Project info</p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Nature1.png" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Nature1.png" onclick="onClickImage(this)"> 
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Nature1.png" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="board-game-wizard-projet">
+  <button onClick="closeProjectInfo('board-game-wizard-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Board Game Wizard</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">Html</p>
+    <p class="tech-tag">Css</p>
+    <p class="tech-tag">Javascript</p>
+    <p class="tech-tag">D3.js</p>
+  </div>
+  <p>Project info</p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/boardGameWizardCardImg.png" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/boardGameWizardCardImg.png" onclick="onClickImage(this)"> 
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/boardGameWizardCardImg.png" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

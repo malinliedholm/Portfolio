@@ -296,7 +296,8 @@ body {
 }
 
 .project-text {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   padding: 10px;
   margin-top: 10px;
   margin: 0 auto;
@@ -434,12 +435,14 @@ body {
 }
 
 .gallery-image {
+  width: 100%;
   max-width: 700px;
   margin: auto;
   display: block;
   background-size: cover;
 
   margin-bottom: 50px;
+  padding: 10px;
   border-radius: 10px;
 }
 

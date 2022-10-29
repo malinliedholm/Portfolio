@@ -44,6 +44,23 @@ body {
   height: 550px;
 }
 
+@media (max-width: 1300px) {
+  .header-container {
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .header-text {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .header-img {
+    margin-bottom: 150px;
+  }
+  
+}
+
 .navbar-top {
   background-color: var(--main-background-color);
   height: 50px;
@@ -288,8 +305,7 @@ body {
 }
 
 #oVRseer-projet {
-  /*display: none;*/
-  height: 1900px;
+  height: 1940px;
   transition: all 0.25s linear;
 }
 
@@ -298,7 +314,7 @@ body {
 }
 
 #sabelandtiny-projet {
-  height: 1900px;
+  height: 1820px;
   transition: all 0.25s linear;
 }
 
@@ -307,8 +323,7 @@ body {
 }
 
 #raytracer-projet {
-  /*display: none;*/
-  height: 1900px;
+  height: 2000px;
   transition: all 0.25s linear;
 }
 
@@ -317,7 +332,6 @@ body {
 }
 
 #hares-and-bears-projet {
-  /*display: none;*/
   height: 1900px;
   transition: all 0.25s linear;
 }
@@ -327,7 +341,6 @@ body {
 }
 
 #board-game-wizard-projet {
-  /*display: none;*/
   height: 1900px;
   transition: all 0.25s linear;
 }

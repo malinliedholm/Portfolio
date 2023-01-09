@@ -273,7 +273,7 @@ body {
 
 
 .container-project-info {
-  max-height: 2500px;
+  max-height: 3000px;
   /*padding: 10px;*/
   /*background-color: #eee6e3;*/
   background-color: #ffebd9ff;
@@ -374,7 +374,7 @@ body {
 }
 
 #hares-and-bears-projet {
-  height: 1900px;
+  height: 2900px;
   transition: all 0.25s linear;
 }
 
@@ -383,7 +383,7 @@ body {
 }
 
 #board-game-wizard-projet {
-  height: 1900px;
+  height: 850px;
   transition: all 0.25s linear;
 }
 

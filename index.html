@@ -1,118 +1,322 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Malin Liedholm</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/base-style.css">
-        <link rel="stylesheet" href="./css/index-style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <title>Malin Liedholm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="websiteContent/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="websiteContent/js/script.js"></script>
+</head>
+<body>
 
-        <header> 
-        <div class="row">
-            <div class="column">
-                <img src="images/MalinImg.jpg" class="profile-img w3-circle">
-            </div>
-            <div class="column">
-                <div class="header-about">
-                <div class="introduction-info-title">Malin Liedholm</div>
-                <div class="introduction-info-text">I am a Master of Science student in Media Technology and Engineering at KTH Royal Institute of Technology, with an interest in information visualization, computer graphics and extended reality (XR). I am currently reading the last year of my master’s programme which is within computer science with a specialization track within visualization and interactive graphics. On this site you can read more about some different projects that I have worked on.</div>
-                </div>
-                <div class="contact-links">
-                <a href="mailto:malin.liedholm@gmail.com"><i class="fa fa-envelope" style="font-size: 30px;"></i></a>
-                <a href="https://github.com/malinliedholm"><i class="fa fa-github" style="font-size: 30px;"></i></a>
-                <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173"><i class="fa fa-linkedin" style="font-size: 30px;"></i></a>
-                </div>
-            </div>
+<header>
+  <div class="header-container">
+    <div class="header-text">
+      <h1>Hello! My name is Malin Liedholm</h1>
+      <h2></h2>
+      <h4>I have newly graduated with a Master of Science degree in Media Technology. I have a big interest in programming, game development, computer graphics and extended reality (XR).</h2>
+        <div class="contact-links">
+          <a href="mailto:malin.liedholm@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size: 30px;"></i></a>
+          <a href="https://github.com/malinliedholm" target="_blank"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+          <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173" target="_blank"><i class="fa fa-linkedin" style="font-size: 30px;"></i></a>
         </div>
-        </header>
-        
-        <main>
-            <h1 class="projects-title">Projects</h1>
-            
-            <div class="projects-container">
-                <div class="row">
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="oVRseer">oVRseer</h2>
-                            <img class="project-img" src="images/oVRseerCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-unity">Unity</div>
-                                <div class="label label-cSharp">C#</div>
-                                </div>
-                                <p class="project-short-description">oVRseer is an asymmetrical multiplayer prop hunt VR game developed in Unity as a part of a group project in the course DH2413 Advanced Graphics and Interaction at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='oVRseer.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="sabelTiny">Sabel and Tiny</h2>
-                            <img class="project-img" src="images/sabelAndTinyCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-unity">Unity</div>
-                                <div class="label label-cSharp">C#</div>
-                                </div>
-                                <p class="project-short-description">Sabel and Tiny is a 2D platform puzzle game developed in Unity as a part of a group project in the course DH2650  Computer Game Design at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='sabelAndTiny.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="rayTracer">Ray tracer</h2>
-                            <img class="project-img" src="images/raytracerCardImg.bmp">
-                            <div class="label-container">
-                                <div class="label label-cpp">C++</div>
-                                </div>
-                                <p class="project-short-description">
-                                As a part of a project in the course DH2323  Computer Graphics and Interaction at KTH I implemented a basic raytracer in C++ and SDL.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='raytracer.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="project-card">
-                            <h2 class="project-heading" id="boardGameWizard">Board Game Wizard</h2>
-                            <img class="project-img" src="images/boardGameWizardCardImg.png">
-                            <div class="label-container">
-                                <div class="label label-javascript">Javascript</div>
-                                <div class="label label-javascript">D3.js</div>
-                                <div class="label label-html">HTML</div>
-                                <div class="label label-css">CSS</div>
-                                </div>
-                                <p class="project-short-description">
-                                Board Game Wizard is an interactive visualization of board games, where you can find board games by filter on things like game type, playtime, game mechanics and much more. The project was a group project developed in the course DH2321  Information Visualization at KTH.
-                                <br>
-                                ...
-                                </p>
-                                <button onclick="window.location.href='boardGameWizard.html'" class="btn-learn-more">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-        </main>
-        <footer>
-        Contact: 
-            <a href="mailto:malin.liedholm@gmail.com"><i class="fa fa-envelope" style="font-size: 12px;"></i></a>
-            <a href="https://github.com/malinliedholm"><i class="fa fa-github" style="font-size: 12px;"></i></a>
-            <a href="https://se.linkedin.com/in/malin-liedholm-9b8913173"><i class="fa fa-linkedin" style="font-size: 12px;"></i></a>
-        </footer>
+    </div>
+    
+    <div class="header-img">
+      <div class="profile-img-bg-1"></div>
+      <div class="profile-img-bg-2"></div>
+      <img src="websiteContent/images/MalinImg.jpg" class="profile-img">
+    </div>
+  </div>
+</header>
+<div class="divider">
+  <img src="websiteContent/images/headermaindivider2.svg" class="header-main-divider-img">
+</div>
 
-    </body>
+<div class="title-container" id="projectsTitle">
+  <h2>Projects</h2>
+</div>
+
+<div class="grid-container">
+
+    <div class="grid-row">
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+
+          <div class="card-image-container">
+          <img src="websiteContent/images/oVRseerImg1.png" class="card-image" alt="oVRseer">
+          </div>
+          
+          <div class="card-text">
+            <h1 class="card-caption">oVRseer</h1>
+            <div class="card-description">
+              <p>An assymetrical VR prop hunt multiplayer game</p>
+              <button onClick="clickProjectCard('oVRseer-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/sTImg2.png" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Sabel & Tiny</h1>
+            <div class="card-description">
+              <p>A 2D platform puzzle game</p>
+              <button onClick="clickProjectCard('sabelandtiny-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/ray_tracerCardImg.bmp" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Ray tracer</h1>
+            <div class="card-description">
+              <p>A basic ray tracer developed using C++ and SDL</p>
+              <button onClick="clickProjectCard('raytracer-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+          <img src="websiteContent/images/HaresBearsCard.png" class="card-image" alt="oVRseer">
+          </div>
+          <div class="card-text">
+            <h1 class="card-caption">Hares & Bears</h1>
+            <div class="card-description">
+              <p>An ecosystem simulation in AR</p>
+              <button onClick="clickProjectCard('hares-and-bears-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-card">
+        <figure class="card-thumbnail">
+          <div class="card-image-container">
+            <img src="websiteContent/images/boardGameWizardCardImg.png" class="card-image" alt="oVRseer">
+            </div>
+          <div class="card-text">
+            <h1 class="card-caption">Board Game Wizard</h1>
+            <div class="card-description">
+              <p>A visualization tool for finding boardgames</p>
+              <button onClick="clickProjectCard('board-game-wizard-projet')" type="button" class="btn learn-more-btn">Learn More</button>
+            </div>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="divider">
+  <img src="websiteContent/images/projectinfodivider.svg" class="header-main-divider-img">
+</div>
+
+<div class="container-project-info is-hidden"  id="oVRseer-projet">
+  <button onClick="closeProjectInfo('oVRseer-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>oVRseer</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+    <p class="tech-tag">Blender</p>
+  </div>
+  <p>oVRseer is an asymmetrical multiplayer prop hunt VR game developed in Unity as a part of a group project in the course 
+    DH2413 Advanced Graphics and Interaction at KTH. In the game one player plays in VR and takes the role of the Overseer, 
+    with the goal of finding and eliminating the other players. The other players play can play on either desktop or an android phone. 
+    These players play as Tiny golems and their goal is to collect keys that are hidden across the map. When enough keys are collected, 
+    doors open that the Tiny golem players can escape through. While trying to find the keys the Tiny golem players should avoid getting 
+    noticed by the Overseer. They can do this by for example morph into different props that are scattered across the map or by trying to 
+    impersonate the NPCs that are walking around the map. The game ends when for each of the Tiny golems, they have either managed to 
+    escape or been eliminated by the Overseer.</p>
+
+  <p>During the project I worked with implementing the key collecting system for the Tiny golem players, where C# was the main programming language. 
+    I also worked on implementing a simple shader to create a light beam effect that shows up in front of the doors when they are opened so that the 
+    Tiny golem players can easier find there way to the door. This was my first time writing a shader in Unity, so I learned the basics of writing 
+    shaders in HLSL and Shaderlab. Futhermore I worked with creating some of the 3D models for the game in Blender as well as constructing parts of the final map.</p>
+
+  <p>If you want to learn even more about the project you can check out the <a href="https://maximillianmus.github.io/oVRseer/" target="_blank">project website</a></p>
+  
+  </div>
+  <div class="project-images">
+    <div class="row">
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerCardImg.png" onclick="onClickImage(this)">
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerImg1.png" onclick="onClickImage(this)"> 
+        <img class="gallery-image galleryImageSlides" src="websiteContent/images/oVRseerImg2.png" onclick="onClickImage(this)">
+    </div>
+    </div>
+
+    <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-top">
+      <img id="imgToShow" style="width: 100%;">
+      </div>
+    </div>
+</div>
+
+<div class="container-project-info is-hidden"  id="sabelandtiny-projet">
+  <button onClick="closeProjectInfo('sabelandtiny-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Sabel & Tiny</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+  </div>
+  <p>Sabel and Tiny is a 2D platform puzzle game developed in Unity as a part of a group project in the course DH2650 Computer Game Design at KTH.</p>
+  <p>During this project it was my first time working in Unity, so I learned the basics of working with the engine. My main contribution to the project was 
+    implementing the movement and switching of the characters. I also implemented the puzzle locks which are locks that prevent the characters from reaching 
+    different parts of the map. To unlock a lock and progress further in the game the player needs to find the corresponding puzzle piece that is located 
+    somewhere on the map. I also had the main responsibility of documenting the work with the game, such as information about gameplay and game mechanics, 
+    characters, and game world in a game design document.</p>
+  <p>If you want to learn even more about the project you can check out the <a href="https://sabeltiny.github.io/" target="_blank">project website</a></p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg1.png" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg2.png" onclick="onClickImage(this)"> 
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/sTImg3.png" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="raytracer-projet">
+  <button onClick="closeProjectInfo('raytracer-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Ray tracer</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C++</p>
+    <p class="tech-tag">SDL</p>
+  </div>
+  <p>As a part of a project in the course DH2323 Computer Graphics and Interaction at KTH I implemented a basic ray tracer in C++ and SDL.</p>
+  <p>The ray tracer was an extension on one of the lab assignments I made in the same course. The implemented ray tracer can render diffuse and 
+    specular materials on triangulated meshes and spheres. The ray tracer also renders hard shadows. Refraction was also implemented as a part of 
+    the ray tracer to be able to render transparent materials.</p>
+  <p>If you want to learn even more about the project you can read the project report that is available here: <a href="https://drive.google.com/file/d/1RFN6vpQW-i_19x_e3RSO8yt6yXiomOOx/view?usp=sharing" target="_blank">Project report</a></p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Sphere2.bmp" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/raytracerCardImg.bmp" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Glass1.bmp" onclick="onClickImage(this)"> 
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="hares-and-bears-projet">
+  <button onClick="closeProjectInfo('hares-and-bears-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Hares & Bears</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">C#</p>
+    <p class="tech-tag">Unity</p>
+    <p class="tech-tag">Blender</p>
+  </div>
+  <p>Hares and Bears is an ecosystem simulation in Augmented reality (AR) developed in Unity as a part of a group project in the course 
+    DH2413 Advanced Graphics and Interaction at KTH. With the application you can observe a virtual ecosystem containing the four animal species: 
+    hares, foxes, bears and deers. The animals will need to eat and drink to survive. The animals will also reproduce.</p>
+
+  <p>During the project I created on some of the 3D animal models and animation in Blender (the bear and deer as well as some of the plants). In the beggining of the project I would
+    say that my knowledge in 3D modeling was limited as I only worked with Blender a little bit beforehand. So during the project I learned alot on how to work in Blender to create
+    3D models and keyframe animations using image and videos as references. When implementing the animations in Unity I also learned the basics of the state machine tool for animations in Unity.
+    I was also responsible for developing the project website, where you can read more of the project and download the demo app: <a href="https://maximillianmus.github.io/Hares-and-Bears/" target="_blank">Project website</a>.
+  </p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/Nature1.png" onclick="onClickImage(this)"> 
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/HaresBearsCard.png" onclick="onClickImage(this)">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/AppImg2.jpg" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+<div class="container-project-info is-hidden"  id="board-game-wizard-projet">
+  <button onClick="closeProjectInfo('board-game-wizard-projet', 'projectsTitle')" class="close-btn">X</button>
+  <div class="project-text">
+  <h1>Board Game Wizard</h1>
+  <div class="tech-tags">
+    <p class="tech-tag">Html</p>
+    <p class="tech-tag">Css</p>
+    <p class="tech-tag">Javascript</p>
+    <p class="tech-tag">D3.js</p>
+  </div>
+  <p>Board Game Wizard is an interactive visualization of board games, where you can find board games by filter on things 
+    like game type, playtime, game mechanics and much more. The project was a group project developed in the course DH2321 Information Visualization at KTH.</p>
+  <p>During the project it was my first-time programming in JavaScript as well as my first time using the D3.js JavaScript library, so I learned a lot about both 
+    during the project. My main contribution in the project was to implement the interactive legend for game type, structure the information about each board game 
+    in the information container that shows up when pressing a board game in the scatterplot. I also worked on filtering of number of players, playtime, recommended 
+    player age and number of ratings</p>
+  <p>If you want to check out and explore the project for yourself, you can do it here: <a href="https://maximillianmus.github.io/Board-game-wizard/" target="_blank">Board Game Wizard</a></p>
+</div>
+
+<div class="project-images">
+  <div class="row">
+      <img class="gallery-image galleryImageSlides" src="websiteContent/images/BGW.jpg" onclick="onClickImage(this)">
+  </div>
+  </div>
+
+  <div id="modalImageDisplay" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-top">
+    <img id="imgToShow" style="width: 100%;">
+    </div>
+  </div>
+
+</div>
+
+</body>
 </html>
